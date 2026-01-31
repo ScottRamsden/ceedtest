@@ -12,7 +12,7 @@
     "test:load:b": "node load-tests/client-b.load.js",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "husky"
+    "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then husky; fi"
   },
   "dependencies": {
     "express": "^4.19.2",
