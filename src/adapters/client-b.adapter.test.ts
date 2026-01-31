@@ -8,16 +8,16 @@ describe('ClientBAdapter', () => {
     id: 'REF456',
     route: {
       pol: 'PORT-A',
-      pod: 'PORT-B'
+      pod: 'PORT-B',
     },
     schedule: {
       etd: '2026-02-01',
-      eta: '2026-02-05'
+      eta: '2026-02-05',
     },
     metrics: {
-      weight: 5000
+      weight: 5000,
     },
-    status_code: 'INTRANSIT'
+    status_code: 'INTRANSIT',
   };
 
   it('should support client-b', () => {
@@ -38,7 +38,7 @@ describe('ClientBAdapter', () => {
       etd: '2026-02-01',
       eta: '2026-02-05',
       weight: 5000,
-      status: ShipmentStatus.IN_TRANSIT
+      status: ShipmentStatus.IN_TRANSIT,
     });
   });
 

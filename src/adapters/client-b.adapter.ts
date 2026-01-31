@@ -31,10 +31,10 @@ export class ClientBAdapter implements ClientAdapter<ClientBPayload> {
 
   private mapStatus(status: string): ShipmentStatus {
     const mapping: Record<string, ShipmentStatus> = {
-      'INTRANSIT': ShipmentStatus.IN_TRANSIT,
-      'BOOKED': ShipmentStatus.BOOKED,
-      'DEPARTED': ShipmentStatus.DEPARTED,
-      'ARRIVED': ShipmentStatus.ARRIVED,
+      INTRANSIT: ShipmentStatus.IN_TRANSIT,
+      BOOKED: ShipmentStatus.BOOKED,
+      DEPARTED: ShipmentStatus.DEPARTED,
+      ARRIVED: ShipmentStatus.ARRIVED,
     };
     return mapping[status] || ShipmentStatus.BOOKED;
   }

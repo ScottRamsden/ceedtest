@@ -11,7 +11,7 @@ describe('ClientAAdapter', () => {
     departureEstimate: '2026-01-01T00:00:00Z',
     arrivalEstimate: '2026-01-02T00:00:00Z',
     cargoWeightKg: 1000,
-    shipmentState: ShipmentStatus.BOOKED
+    shipmentState: ShipmentStatus.BOOKED,
   };
 
   it('should support client-a', () => {
@@ -36,7 +36,7 @@ describe('ClientAAdapter', () => {
       etd: '2026-01-01T00:00:00Z',
       eta: '2026-01-02T00:00:00Z',
       weight: 1000,
-      status: ShipmentStatus.BOOKED
+      status: ShipmentStatus.BOOKED,
     });
   });
 });

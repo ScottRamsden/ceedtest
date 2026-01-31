@@ -23,6 +23,9 @@ WORKDIR /app
 
 # Copy only production dependencies and the built dist folder
 COPY package*.json ./
+COPY config.js ./
+# We need to install production dependencies, and since we use React/Lucide, 
+# they must be in the production image.
 RUN npm install --omit=dev
 
 COPY --from=builder /app/dist ./dist
